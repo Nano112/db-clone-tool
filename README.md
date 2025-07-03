@@ -114,7 +114,7 @@ The tool will:
 **Testing Migrations**
 ```bash
 # Clone production to local
-uv run python db_clone_tool.py
+uv run python main.py
 
 # Test migrations
 sail artisan migrate
@@ -125,7 +125,7 @@ sail artisan migrate
 # New developer onboarding
 cp .env.example .env
 # Add credentials and clone
-uv run python db_clone_tool.py
+uv run python main.py
 ```
 
 ## Troubleshooting
@@ -162,7 +162,7 @@ cd db-clone-tool
 uv add textual psycopg2-binary python-dotenv
 
 # Run
-uv run python db_clone_tool.py
+uv run python main.py
 ```
 
 ## License
